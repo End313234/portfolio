@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	@apply p-0 m-0 selection:bg-violet-700 selection:text-opacity-100 selection:text-white
+}
+
+body {
+	@apply bg-stone-900
+}
+
+p,
+a {
+	@apply text-white text-opacity-30 font-medium
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply text-white
+}
+
+h1 {
+	@apply text-3xl font-title font-semibold
+}
+
+.button {
+	@apply text-white border border-green-300 px-7 py-4 rounded-md transition-colors hover:bg-green-300 focus:outline-violet-700 focus-visible:outline-violet-700
+}
