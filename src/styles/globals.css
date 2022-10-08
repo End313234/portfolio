@@ -43,6 +43,10 @@ h1 {
 	@apply text-3xl font-title font-semibold
 }
 
+strong {
+	@apply text-violet-300 text-opacity-40
+}
+
 .button {
 	@apply text-white border border-green-300 px-7 py-4 rounded-md transition-colors hover:bg-green-300 focus:outline-violet-700 focus-visible:outline-violet-700
 }

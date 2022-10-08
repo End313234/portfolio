@@ -4,27 +4,41 @@ import type { FC } from "react";
 export const AboutMeSection: FC = () => {
 	return (
 		<section
-			id="who-am-i"
-			className="flex items-center justify-between mx-4 mt-10 md:mx-16"
+			id="about-me"
+			className="flex items-center justify-between flex-col mx-4 gap-10 md:mx-16 md:flex-row-reverse md:gap-0"
 		>
-			<div className="flex flex-col gap-4 items-center justify-center max-w-2xl text-center md:items-start md:text-start">
-				<h1 className="w-full">Quem sou eu?</h1>
-				<p>
-					Sou um desenvolvedor full-stack e designer com 3+ anos de experiência
-					em várias tecnologias e linguagens de programação, reunindo eficiência
-					e qualidade em meus projetos
-				</p>
-				<a href="#projects" className="button">
-					Veja meus trabalhos
-				</a>
-			</div>
-			<div className="hidden md:flex">
-				<Image
-					src="/programmer.svg"
-					alt="Programmer picture"
-					width="300"
-					height="300"
-				/>
+			<Image
+				src="/profile-picture.png"
+				alt="Discord's profile picture"
+				width="250"
+				height="250"
+				style={{
+					borderRadius: "100%",
+					borderWidth: "4px",
+					borderColor: "#6FCF97",
+					borderStyle: "solid",
+					margin: "10rem",
+				}}
+			/>
+			<div className="max-w-2xl text-center flex flex-col gap-5 md:text-left">
+				<h1>Minha jornada</h1>
+				<div className="flex flex-col gap-5">
+					<p>
+						Comecei na área de programação com a linguagem{" "}
+						<strong>Python</strong>. Logo em seguida, comecei a estudar{" "}
+						<strong>JavaScript</strong> e <strong>TypeScript</strong> e, durante
+						esse tempo, tive bastante contato com tecnologias como{" "}
+						<strong>NestJS</strong> e <strong>NextJS</strong>. Algum tempo
+						depois, passei a focar meus estudos em back-end usando a linguagem
+						de programação <strong>Go</strong>, uma linguagem de alto nível
+						extremamente rápida.
+					</p>
+					<p>
+						Simultaneamente, evoluí no uso de banco de dados SQL e NoSQL, como{" "}
+						<strong>MySQL</strong>, <strong>PostgreSQL</strong>,{" "}
+						<strong>MongoDB</strong> e <strong>Firebase</strong>.
+					</p>
+				</div>
 			</div>
 		</section>
 	);
