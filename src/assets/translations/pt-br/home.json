@@ -1,5 +1,7 @@
 {
 	"about-me": {
-		"title": "Quem sou eu?"
+		"title": "Quem sou eu?",
+		"description": "Sou um desenvolvedor full-stack e designer com 3+ anos de experiência em várias tecnologias e linguagens de programação, reunindo eficiência e qualidade em meus projetos",
+		"check-my-works": "Veja meus trabalhos"
 	}
 }

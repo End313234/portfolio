@@ -5,7 +5,19 @@
 @tailwind utilities;
 
 * {
-	@apply p-0 m-0 selection:bg-violet-700 selection:text-opacity-100 selection:text-white
+	@apply p-0 m-0 selection:bg-violet-700 scroll-smooth selection:text-opacity-100 selection:text-white
+}
+
+*::-webkit-scrollbar {
+	@apply w-2
+}
+
+*::-webkit-scrollbar-track {
+	@apply bg-stone-900
+}
+
+*::-webkit-scrollbar-thumb {
+	@apply bg-white bg-opacity-30 rounded-lg
 }
 
 body {

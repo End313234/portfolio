@@ -1,5 +1,7 @@
 {
 	"about-me": {
-		"title": "Who am I?"
+		"title": "Who am I?",
+		"description": "I am a software developer and designer with 3+ years of experience with many technologies and programming languages, combining efficiency and quality in my works",
+		"check-my-works": "Check my works"
 	}
 }
