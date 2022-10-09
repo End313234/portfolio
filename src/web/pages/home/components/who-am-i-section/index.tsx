@@ -1,30 +1,31 @@
-import Image from "next/image";
 import type { FC } from "react";
 
 export const WhoAmISection: FC = () => {
 	return (
 		<section
 			id="who-am-i"
-			className="flex items-center justify-between mx-4 mt-10 md:mx-16"
+			className="flex items-center justify-center mt-10 mx-4 lg:mx-16"
 		>
-			<div className="flex flex-col gap-4 items-center justify-center max-w-2xl text-center md:items-start md:text-start">
-				<h1 className="w-full">Quem sou eu?</h1>
-				<p>
-					Sou um desenvolvedor full-stack e designer com 3+ anos de experiência
-					em várias tecnologias e linguagens de programação, reunindo eficiência
-					e qualidade em meus projetos
-				</p>
-				<a href="#about-me" className="button">
-					Saiba mais
-				</a>
-			</div>
-			<div className="hidden md:flex">
-				<Image
-					src="/programmer.svg"
-					alt="Programmer picture"
-					width="300"
-					height="300"
-				/>
+			<div className="flex items-center justify-between max-w-screen-lg lg:mx-16">
+				<div className="flex flex-col gap-4 items-center justify-center text-center w-screen lg:items-start lg:text-start">
+					<h1 className="w-full">Quem sou eu?</h1>
+					<p className="max-w-xl">
+						Sou um desenvolvedor full-stack e designer com 3+ anos de
+						experiência em várias tecnologias e linguagens de programação,
+						reunindo eficiência e qualidade em meus projetos
+					</p>
+					<a href="#about-me" className="button">
+						Saiba mais
+					</a>
+				</div>
+				<div className="hidden lg:flex">
+					{/* eslint-disable-next-line @next/next/no-img-element */}
+					<img
+						src="./programmer.svg"
+						alt="Programmer picture"
+						className="min-w-[200px] min-h-[200] max-w-[200px]"
+					/>
+				</div>
 			</div>
 		</section>
 	);
