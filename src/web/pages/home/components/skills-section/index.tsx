@@ -66,10 +66,10 @@ export const SkillsSection: FC = () => {
 	return (
 		<section
 			id="skills"
-			className="flex items-center justify-center flex-col gap-14"
+			className="flex items-center justify-center flex-col gap-14 w-full"
 		>
 			<h1>Minhas skills</h1>
-			<div className="flex gap-20 w-screen max-w-[13rem] max-h-max pb-8 pt-2 overflow-x-scroll items-center md:max-w-4xl">
+			<div className="flex gap-20 w-[12rem] max-h-max pb-8 pt-2 overflow-x-scroll items-center inset-box-shadow lg:w-[1024px]">
 				{skills.map(skill => (
 					<SkillsSectionCard key={skill.title} {...skill} />
 				))}
