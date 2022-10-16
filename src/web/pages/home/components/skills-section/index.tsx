@@ -64,15 +64,14 @@ export const SkillsSection: FC = () => {
 	];
 
 	return (
-		<section
-			id="skills"
-			className="flex items-center justify-center flex-col gap-14 w-full"
-		>
-			<h1>Minhas skills</h1>
-			<div className="flex gap-20 w-[12rem] max-h-max pb-8 pt-2 overflow-x-scroll items-center inset-box-shadow lg:w-[1024px]">
-				{skills.map(skill => (
-					<SkillsSectionCard key={skill.title} {...skill} />
-				))}
+		<section id="skills" className="flex items-center justify-center">
+			<div className="flex items-center justify-center flex-col gap-14 w-screen max-w-screen-lg">
+				<h1>Minhas skills</h1>
+				<div className="flex gap-20 max-w-2xl pb-8 pt-2 overflow-x-scroll items-center justify-center lg:w-[90vw] lg:max-w-screen-lg">
+					{skills.map(skill => (
+						<SkillsSectionCard key={skill.title} {...skill} />
+					))}
+				</div>
 			</div>
 		</section>
 	);

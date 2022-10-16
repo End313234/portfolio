@@ -9,7 +9,7 @@ export const Home: NextPage = () => {
 	return (
 		<>
 			<Header />
-			<main className="flex flex-col gap-56">
+			<main className="flex flex-col gap-56 mt-10 mx-4 md:mx-16">
 				<WhoAmISection />
 				<SkillsSection />
 				<AboutMeSection />
