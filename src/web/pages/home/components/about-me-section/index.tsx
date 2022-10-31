@@ -4,7 +4,7 @@ import type { FC } from "react";
 export const AboutMeSection: FC = () => {
 	return (
 		<section id="about-me" className="flex items-center justify-center">
-			<div className="flex items-center justify-between w-screen max-w-screen-lg min-w-max flex-col gap-10 lg:flex-row-reverse">
+			<div className="flex items-center justify-between w-screen max-w-screen-lg flex-col gap-10 lg:flex-row-reverse">
 				<div className="border-4 border-green-300 rounded-full flex items-center">
 					<Image
 						src="/profile-picture.png"
